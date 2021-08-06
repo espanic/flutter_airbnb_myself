@@ -13,9 +13,8 @@ class HomeBody extends StatelessWidget {
     double bodyWidth = getBodyWidth(context);
     return Align(
       child: SizedBox(
-        width: bodyWidth,
+        width: bodyWidth > 420 ? bodyWidth : 420,
         child: Column(
-          crossAxisAlignment: CrossAxisAlignment.start,
           children: [
             HomeBodyBanner(),
             HomeBodyPopular(),

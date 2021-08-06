@@ -22,7 +22,7 @@ class HomeBodyPopularItem extends StatelessWidget {
     return Container(
       constraints: BoxConstraints(minWidth: 300),
       child: SizedBox(
-        width: width,
+        width: width > 420 ? width : 420,
         child: Column(
           children: [
             ClipRRect(
